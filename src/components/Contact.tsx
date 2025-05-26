@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
     <section id="contact" className="py-20 px-4 max-w-[1400px] mx-auto">
       <div className="flex flex-col md:flex-row gap-12">
         <div className="flex-1">
-          <h2 className="text-4xl xs:text-4xl font-heading mb-6 font-bold">Get In Touch</h2>
+          <h2 className="text-4xl xs:text-4xl font-heading mb-6 font-bold [text-shadow:0_0_8px_rgba(0,255,255,0.5)]">Get In Touch</h2>
           <p className="text-lg xs:text-base mb-5">You can find me on:</p>
           <ul className="mb-6">
             <li className="mb-3 flex items-center gap-3">

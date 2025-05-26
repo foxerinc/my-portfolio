@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
@@ -13,8 +14,19 @@ const Header: React.FC = () => {
 
   return (
     <header className="bg-background p-4 sticky top-0 z-50">
-      <nav className="container mx-auto max-w-[1400px] flex justify-between items-center border-b-4 border-secondary">
+      <nav className="container mx-auto max-w-[1400px] flex justify-between items-center ">
+        <div className='flex justify-end items-center'>
+            <Image
+            src="/logo.png"
+            alt="Foxerinc Logo"
+            width={80}
+            height={25}
+            priority={true}
+            className="filter drop-shadow-[0_0_4px_rgba(0,255,255,0.5)]"
+          />
         <h1 className="text-2xl font-heading text-primary font-extrabold">Foxerinc</h1>
+        </div>
+
         <button
           className="sm:hidden text-white text-2xl"
           onClick={toggleMenu}

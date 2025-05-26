@@ -18,12 +18,12 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <motion.h2
-            className="text-5xl xs:text-4xl md:text-6xl font-heading font-extrabold text-primary mb-4 [text-shadow:0_0_8px_rgba(0,255,255,0.5)]"
+            className="text-5xl xs:text-4xl md:text-6xl font-heading font-extrabold text-secondary mb-4 [text-shadow:0_0_8px_rgba(255,255,255,0.5)]"
             animate={{
               textShadow: [
-                '0 0 8px rgba(0,255,255,0.5)',
-                '0 0 12px rgba(0,255,255,0.7)',
-                '0 0 8px rgba(0,255,255,0.5)',
+                '0 0 8px rgba(255,255,255,0.5)',
+                '0 0 12px rgba(255,255,255,0.7)',
+                '0 0 8px rgba(255,255,255,0.5)',
               ],
               x: [0, 3, -3, 0],
             }}

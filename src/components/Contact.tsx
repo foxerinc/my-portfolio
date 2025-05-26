@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaLinkedin, FaInstagram, FaGithub} from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -65,7 +66,10 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 max-w-[1400px] mx-auto">
+    <motion.section id="contact" className="py-20 px-4 max-w-[1400px] mx-auto" initial={{ opacity: 0, y: -20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      viewport={{ once: false, amount: 0.4 }}>
       <div className="flex flex-col md:flex-row gap-12">
         <div className="flex-1">
           <h2 className="text-4xl xs:text-4xl font-heading mb-6 font-bold [text-shadow:0_0_8px_rgba(0,255,255,0.5)]">Get In Touch</h2>
@@ -149,7 +153,7 @@ const Contact: React.FC = () => {
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
